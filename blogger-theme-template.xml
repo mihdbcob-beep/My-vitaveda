@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='vitaveda.xml' b:templateVersion='1.0.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <b:include data='blog' name='all-head-content'/>
+  <title><data:blog.pageTitle/></title>
+  
+  <!-- Tailwind CSS via CDN for Blogger -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            primary: {
+              50: '#f2f6f0',
+              100: '#e1ebd9',
+              500: '#6b8e23',
+              600: '#55711c',
+              900: '#2a380e',
+            },
+            accent: '#d4a373',
+            background: '#fdfbf7',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #fdfbf7;
+      color: #333333;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <b:skin><![CDATA[
+    /* Blogger specific CSS */
+  ]]></b:skin>
+</head>
+<body class="bg-background font-sans">
+
+  <!-- Header / Navbar -->
+  <header class="sticky top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center gap-2">
+          <span class="font-serif text-2xl font-bold text-primary-900">VitaVeda</span>
+        </div>
+        <nav class="hidden md:flex items-center space-x-8">
+          <a href="#services" class="text-gray-600 hover:text-primary-600 font-medium">Services</a>
+          <a href="#shop" class="text-gray-600 hover:text-primary-600 font-medium">Shop</a>
+          <a href="#blog" class="text-gray-600 hover:text-primary-600 font-medium">Blog</a>
+          <a href="#feedback" class="text-gray-600 hover:text-primary-600 font-medium">Feedback</a>
+          <a href="#book" class="bg-primary-600 hover:bg-primary-900 text-white px-6 py-2.5 rounded-full font-medium transition-all">Book Now</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="min-h-screen">
+    
+    <!-- Hero Section (Static HTML) -->
+    <section id="home" class="pt-28 pb-16 px-4 max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <h1 class="font-serif text-5xl md:text-6xl font-bold text-primary-900 leading-tight">
+            Nourish Your Body, <br/>
+            <span class="text-primary-600">Balance Your Life.</span>
+          </h1>
+          <p class="text-lg text-gray-600 max-w-lg">
+            Discover personalized nutrition plans and Ayurvedic wellness strategies designed to help you achieve optimal health and vitality.
+          </p>
+          <div class="flex gap-4">
+            <a href="#book" class="bg-primary-600 text-white px-8 py-4 rounded-full font-medium">Book Consultation</a>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&amp;fit=crop&amp;q=80&amp;w=800" alt="Healthy Food" class="rounded-[2rem] shadow-xl object-cover h-[500px] w-full"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blogger Dynamic Content Area (Blog Posts) -->
+    <section id="blog" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-serif text-4xl font-bold text-primary-900 mb-4">Wellness Journal</h2>
+          <p class="text-gray-600 text-lg">Insights, recipes, and tips for a healthier lifestyle.</p>
+        </div>
+        
+        <!-- Blogger Main Widget -->
+        <b:section id='main' showaddelement='yes'>
+          <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' version='2' visible='true'>
+            <!-- The standard Blogger loop will render posts here -->
+          </b:widget>
+        </b:section>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-900 text-white pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-primary-100">&copy; 2026 VitaVeda Wellness. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
