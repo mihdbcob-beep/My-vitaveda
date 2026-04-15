@@ -84,12 +84,15 @@ export default function App() {
     <div className="min-h-screen font-sans">
       {/* Navigation */}
       <nav className="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            {/* Logo */}
-            <div className="flex items-center gap-2">
-              <Leaf className="h-8 w-8 text-primary-600" />
-              <span className="font-serif text-2xl font-bold text-primary-900">VitaVeda</span>
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
+          <div className="flex justify-between items-center h-24">
+            {/* Logo & Slogan */}
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-2">
+                <Leaf className="h-8 w-8 text-primary-600" />
+                <span className="font-serif text-2xl font-bold text-primary-900 leading-none">VitaVeda Wellness</span>
+              </div>
+              <span className="text-primary-600 text-[10px] sm:text-xs font-medium tracking-widest uppercase mt-1 ml-10">Nutrition, Naturally</span>
             </div>
 
             {/* Desktop Menu */}
@@ -181,7 +184,7 @@ export default function App() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-28 pb-16 md:pt-36 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <section id="home" className="pt-28 pb-16 md:pt-36 md:pb-24 px-4 sm:px-8 md:px-16 lg:px-24 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -236,7 +239,7 @@ export default function App() {
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="font-serif text-4xl font-bold text-primary-900 mb-4">Our Wellness Services</h2>
             <p className="text-gray-600 text-lg">Tailored approaches to meet your unique health goals through nutrition and holistic practices.</p>
@@ -292,7 +295,7 @@ export default function App() {
 
       {/* Shop Section */}
       <section id="shop" className="py-20 bg-primary-900 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-6">
             <div className="max-w-2xl">
               <h2 className="font-serif text-4xl font-bold mb-4">Apothecary & Shop</h2>
@@ -327,7 +330,7 @@ export default function App() {
 
       {/* Latest Posts Slider */}
       <section className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
           <div className="text-center mb-10">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary-900 mb-4">Latest Insights</h2>
             <p className="text-gray-600 text-lg">Explore our featured topics across health, fitness, and nutrition.</p>
@@ -373,7 +376,7 @@ export default function App() {
 
       {/* Blog Section */}
       <section id="blog" className="py-20 bg-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl font-bold text-primary-900 mb-4">Wellness Journal</h2>
             <p className="text-gray-600 text-lg">Insights, recipes, and tips for a healthier lifestyle.</p>
@@ -423,7 +426,7 @@ export default function App() {
 
       {/* Feedback / Testimonials */}
       <section id="feedback" className="py-20 bg-primary-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
           <h2 className="font-serif text-4xl font-bold text-primary-900 text-center mb-16">Client Success Stories</h2>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -461,12 +464,15 @@ export default function App() {
 
       {/* Footer */}
       <footer id="contact" className="bg-primary-900 text-primary-50 pt-16 pb-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 mb-12">
             <div className="col-span-1 sm:col-span-2 md:col-span-1">
-              <div className="flex items-center gap-2 mb-6">
-                <Leaf className="h-8 w-8 text-accent" />
-                <span className="font-serif text-2xl font-bold text-white">VitaVeda</span>
+              <div className="flex flex-col mb-6">
+                <div className="flex items-center gap-2">
+                  <Leaf className="h-8 w-8 text-accent" />
+                  <span className="font-serif text-2xl font-bold text-white leading-none">VitaVeda Wellness</span>
+                </div>
+                <span className="text-accent text-xs font-medium tracking-widest uppercase mt-2 ml-10">Nutrition, Naturally</span>
               </div>
               <p className="text-primary-100 mb-6">
                 Empowering your health journey through holistic nutrition, Ayurveda, and mindful living.
