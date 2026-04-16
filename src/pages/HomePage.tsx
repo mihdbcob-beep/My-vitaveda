@@ -106,21 +106,21 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                title: "1-on-1 Consultation",
-                desc: "Personalized 60-minute session to assess your health history, goals, and create an actionable wellness roadmap.",
-                price: "$120",
-                img: "https://images.unsplash.com/photo-1551076805-e18690c5e561?auto=format&fit=crop&q=80&w=600"
+                title: "Basic and Keto Diet Plan",
+                desc: "A comprehensive diet strategy focusing on Basic and Keto principles to optimize weight management and overall health.",
+                price: "",
+                img: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600"
               },
               {
                 title: "Custom Diet Plans",
                 desc: "A 4-week tailored meal plan designed for your specific metabolic needs, allergies, and lifestyle preferences.",
-                price: "$199",
-                img: "https://images.unsplash.com/photo-1498837167922-41c46b66c068?auto=format&fit=crop&q=80&w=600"
+                price: "",
+                img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600"
               },
               {
                 title: "Ayurvedic Wellness",
                 desc: "Discover your Dosha and receive holistic lifestyle, herb, and dietary recommendations for deep balance.",
-                price: "$150",
+                price: "",
                 img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=600"
               }
             ].map((service, idx) => (
@@ -138,10 +138,10 @@ export default function HomePage() {
                 <div className="p-8">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="font-serif text-2xl font-bold text-primary-900">{service.title}</h3>
-                    <span className="text-accent font-bold text-xl">{service.price}</span>
+                    {service.price && <span className="text-accent font-bold text-xl">{service.price}</span>}
                   </div>
                   <p className="text-gray-600 mb-6">{service.desc}</p>
-                  <button className="w-full py-3 rounded-xl border-2 border-primary-600 text-primary-600 font-medium hover:bg-primary-600 hover:text-white transition-colors">
+                  <button className="w-full py-3 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-900 transition-colors">
                     Book Session
                   </button>
                 </div>
