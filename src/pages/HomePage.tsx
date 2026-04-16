@@ -26,7 +26,7 @@ export default function HomePage() {
     {
       title: "Superfood Nutrition",
       category: "Nutrition Food",
-      img: "https://images.unsplash.com/photo-1498837167922-41c46b66c068?auto=format&fit=crop&q=80&w=1200",
+      img: "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&q=80&w=1200",
       desc: "Fuel your body with nature's most powerful and healing ingredients."
     }
   ];
@@ -169,8 +169,8 @@ export default function HomePage() {
             {[
               { name: "Organic Ceremonial Matcha", img: "https://images.unsplash.com/photo-1582793988951-9aed5509eb97?auto=format&fit=crop&q=80&w=600" },
               { name: "Daily Digestive Enzymes", img: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=600" },
-              { name: "Ashwagandha Root Extract", img: "https://images.unsplash.com/photo-1611078513568-76c5b966601b?auto=format&fit=crop&q=80&w=600" },
-              { name: "7-Day Gut Reset (E-Book)", img: "https://images.unsplash.com/photo-1554342872-034a06541bad?auto=format&fit=crop&q=80&w=600" }
+              { name: "Ashwagandha Root Extract", img: "https://images.unsplash.com/photo-1596556408544-6c1b3e8d6261?auto=format&fit=crop&q=80&w=600" },
+              { name: "7-Day Gut Reset (E-Book)", img: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=500&q=80" }
             ].map((product, idx) => (
               <div key={idx} className="bg-white/5 rounded-2xl p-4 hover:bg-white/10 transition-colors group">
                 <div className="aspect-square rounded-xl overflow-hidden mb-4 relative">
