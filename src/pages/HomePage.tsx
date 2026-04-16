@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Star, ShoppingBag } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function HomePage() {
   const sliderData = [
@@ -159,17 +160,17 @@ export default function HomePage() {
               <h2 className="font-serif text-4xl font-bold mb-4">Apothecary & Shop</h2>
               <p className="text-primary-100 text-lg">Curated health products, organic supplements, and digital guides to support your journey.</p>
             </div>
-            <button className="flex items-center gap-2 text-accent hover:text-white transition-colors font-medium">
+            <Link to="/shop" className="flex items-center gap-2 text-accent hover:text-white transition-colors font-medium">
               View All Products <ArrowRight className="w-5 h-5" />
-            </button>
+            </Link>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { name: "Organic Ceremonial Matcha", price: "$35.00", img: "https://images.unsplash.com/photo-1564277287253-934c868e54ec?auto=format&fit=crop&q=80&w=400" },
-              { name: "Daily Digestive Enzymes", price: "$28.00", img: "https://images.unsplash.com/photo-1646400684273-010a3000b98c?auto=format&fit=crop&q=80&w=400" },
-              { name: "Ashwagandha Root Extract", price: "$24.00", img: "https://images.unsplash.com/photo-1611078513568-76c5b966601b?auto=format&fit=crop&q=80&w=400" },
-              { name: "7-Day Gut Reset (E-Book)", price: "$15.00", img: "https://images.unsplash.com/photo-1589820924040-6202456e3001?auto=format&fit=crop&q=80&w=400" }
+              { name: "Organic Ceremonial Matcha", img: "https://images.unsplash.com/photo-1582793988951-9aed5509eb97?auto=format&fit=crop&q=80&w=600" },
+              { name: "Daily Digestive Enzymes", img: "https://images.unsplash.com/photo-1610832958506-aa56368176cf?auto=format&fit=crop&q=80&w=600" },
+              { name: "Ashwagandha Root Extract", img: "https://images.unsplash.com/photo-1611078513568-76c5b966601b?auto=format&fit=crop&q=80&w=600" },
+              { name: "7-Day Gut Reset (E-Book)", img: "https://images.unsplash.com/photo-1554342872-034a06541bad?auto=format&fit=crop&q=80&w=600" }
             ].map((product, idx) => (
               <div key={idx} className="bg-white/5 rounded-2xl p-4 hover:bg-white/10 transition-colors group">
                 <div className="aspect-square rounded-xl overflow-hidden mb-4 relative">
@@ -179,7 +180,6 @@ export default function HomePage() {
                   </button>
                 </div>
                 <h4 className="font-medium text-lg mb-1">{product.name}</h4>
-                <p className="text-accent font-medium">{product.price}</p>
               </div>
             ))}
           </div>

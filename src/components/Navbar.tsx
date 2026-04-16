@@ -21,11 +21,12 @@ export default function Navbar() {
     },
     { 
       name: 'Shop', 
-      href: '/#shop',
+      href: '/shop',
+      isRoute: true,
       dropdown: [
-        { name: 'Supplements', href: '/#shop' },
-        { name: 'E-Books', href: '/#shop' },
-        { name: 'Apothecary', href: '/#shop' }
+        { name: 'Supplements', href: '/shop' },
+        { name: 'E-Books', href: '/shop' },
+        { name: 'Apothecary', href: '/shop' }
       ]
     },
     { 
