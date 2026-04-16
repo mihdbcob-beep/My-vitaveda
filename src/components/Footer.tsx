@@ -1,5 +1,5 @@
 import React from 'react';
-import { Leaf, MapPin, Phone, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Leaf, Mail, Instagram, Facebook, Twitter } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -37,20 +37,21 @@ export default function Footer() {
 
           <div>
             <h4 className="font-bold text-white mb-6">Contact</h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-primary-100">123 Wellness Ave, Suite 100<br/>San Francisco, CA 94105</span>
-              </li>
+            <ul className="space-y-4 mb-6">
               <li className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-primary-100">+1 (555) 123-4567</span>
+                <Mail className="w-5 h-5 text-accent shrink-0" />
+                <a href="mailto:contact@vitaveda.life" className="text-primary-100 hover:text-white transition-colors">contact@vitaveda.life</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-accent shrink-0" />
-                <span className="text-primary-100">hello@vitaveda.com</span>
+                <a href="mailto:support@vitaveda.life" className="text-primary-100 hover:text-white transition-colors">support@vitaveda.life</a>
               </li>
             </ul>
+            <div className="flex gap-4 text-sm">
+              <Link to="/privacy-policy" className="text-primary-100 hover:text-white transition-colors">Privacy Policy</Link>
+              <span className="text-primary-100/50">|</span>
+              <Link to="/terms" className="text-primary-100 hover:text-white transition-colors">Terms & Conditions</Link>
+            </div>
           </div>
 
           <div>

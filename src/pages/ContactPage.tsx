@@ -27,21 +27,21 @@ export default function ContactPage() {
                     <MapPin className="w-6 h-6 text-accent shrink-0 mt-1" />
                     <div>
                       <h4 className="font-bold text-lg">Location</h4>
-                      <p className="text-primary-100">123 Wellness Ave, Suite 100<br/>San Francisco, CA 94105</p>
+                      <p className="text-primary-100">Bakshiganj, Cooch Behar<br/>West Bengal, INDIA<br/>PIN CODE - 735122</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Phone className="w-6 h-6 text-accent shrink-0 mt-1" />
                     <div>
                       <h4 className="font-bold text-lg">WhatsApp / Phone</h4>
-                      <p className="text-primary-100">+1 (555) 123-4567</p>
+                      <p className="text-primary-100">+91 8293777400</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <Mail className="w-6 h-6 text-accent shrink-0 mt-1" />
                     <div>
                       <h4 className="font-bold text-lg">Email</h4>
-                      <p className="text-primary-100">hello@vitaveda.com</p>
+                      <p className="text-primary-100">contact@vitaveda.life</p>
                     </div>
                   </div>
                 </div>
