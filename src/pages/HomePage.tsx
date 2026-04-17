@@ -142,9 +142,9 @@ export default function HomePage() {
                     {service.price && <span className="text-accent font-bold text-xl">{service.price}</span>}
                   </div>
                   <p className="text-gray-600 mb-6">{service.desc}</p>
-                  <button className="w-full py-3 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-900 transition-colors">
+                  <Link to="/services" className="block text-center w-full py-3 rounded-xl bg-primary-600 text-white font-medium hover:bg-primary-900 transition-colors">
                     Book Session
-                  </button>
+                  </Link>
                 </div>
               </motion.div>
             ))}

@@ -12,11 +12,12 @@ export default function Navbar() {
     { name: 'About', href: '/about', isRoute: true },
     { 
       name: 'Services', 
-      href: '/#services',
+      href: '/services',
+      isRoute: true,
       dropdown: [
-        { name: '1-on-1 Consultation', href: '/#services' },
-        { name: 'Custom Diet Plans', href: '/#services' },
-        { name: 'Ayurvedic Wellness', href: '/#services' }
+        { name: '1-on-1 Consultation', href: '/services' },
+        { name: 'Custom Diet Plans', href: '/services' },
+        { name: 'Ayurvedic Wellness', href: '/services' }
       ]
     },
     { 
