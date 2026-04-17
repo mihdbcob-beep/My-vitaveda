@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
 import ShopPage from './pages/ShopPage';
 import ServicePage from './pages/ServicePage';
+import FeedbackPage from './pages/FeedbackPage';
 
 // Component to handle scrolling to hash links when navigating
 function ScrollToHash() {
@@ -41,6 +42,7 @@ export default function App() {
             <Route path="/services" element={<ServicePage />} />
             <Route path="/shop" element={<ShopPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/feedback" element={<FeedbackPage />} />
           </Routes>
         </main>
         <Footer />

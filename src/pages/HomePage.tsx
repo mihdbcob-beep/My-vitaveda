@@ -305,7 +305,10 @@ export default function HomePage() {
                 role: "Shop Customer"
               }
             ].map((testimonial, idx) => (
-              <div key={idx} className="bg-white p-8 rounded-3xl shadow-sm relative">
+              <Link to="/feedback" key={idx} className="bg-white p-8 rounded-3xl shadow-sm relative hover:shadow-md transition-shadow group block">
+                <div className="absolute top-8 right-8 text-primary-200 group-hover:text-primary-300 transition-colors">
+                  <ArrowRight className="w-5 h-5 -rotate-45" />
+                </div>
                 <div className="text-accent mb-4 flex">
                   {[...Array(5)].map((_, i) => <Star key={i} className="w-5 h-5 fill-current" />)}
                 </div>
@@ -314,7 +317,7 @@ export default function HomePage() {
                   <p className="font-bold text-primary-900">{testimonial.author}</p>
                   <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

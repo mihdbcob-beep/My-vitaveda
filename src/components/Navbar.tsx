@@ -40,7 +40,7 @@ export default function Navbar() {
       ]
     },
     { name: 'Contact', href: '/contact', isRoute: true },
-    { name: 'Feedback', href: '/#feedback' },
+    { name: 'Feedback', href: '/feedback', isRoute: true },
   ];
 
   return (
